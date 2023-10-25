@@ -59,7 +59,7 @@ const Leagues = [
 
 const Sidebar = async () => {
   return (
-    <section className="h-[50vh] px-2 md:px-4 py-2 bg-[rgb(40,46,58)] rounded-md hidden md-block lg:block">
+    <section className=" px-2 md:px-4 py-2 bg-[rgb(40,46,58)] rounded-md hidden md-block lg:block">
       <div>
         <h1 className="font-bold font-mono text-xl mb-4 text-green-300">
           Popular Football Leagues
