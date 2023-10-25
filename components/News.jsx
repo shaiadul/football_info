@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import {getNewsInfo} from "../api"
+import { getNewsInfo } from "../api";
 // import { newsType } from "@/types";
 
 const News = async () => {
   const getNews = await getNewsInfo();
-  
+
   const newsData = getNews.articles;
 
   return (
@@ -14,7 +14,7 @@ const News = async () => {
         News - Top Headlines
       </h1>
       <div>
-        {newsData.map((news) => (
+        {newsData?.map((news) => (
           <Link key={`${news.title}`} href={news.url} legacyBehavior>
             <a target="_blank">
               <div className="relative w-full h-[150px] mb-4 group">
