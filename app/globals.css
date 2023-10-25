@@ -2,26 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: rgb(226, 253, 251);
+  background-color: #222831;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+/* Hide the scrollbar */
+.scrollbar-hide::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+/* Track */
+.scrollbar-hide::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+.scrollbar-hide::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
