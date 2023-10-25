@@ -1,7 +1,7 @@
-import { matchesType } from "@/types";
+
 import Image from "next/image";
 
-const Competition = ({ data }: { data: matchesType }) => {
+const Competition = ({ data }) => {
   const nd = new Date(data?.utcDate);
   const dateConvert = nd.toDateString();
   return (

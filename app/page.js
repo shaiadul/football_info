@@ -1,5 +1,5 @@
-import { getMatchesfootball, getMatchesfootballFinished } from "@/api"
-import Status from "@/components/Status"
+import { getMatchesfootball, getMatchesfootballFinished } from "../api"
+import Status from "../components/Status"
 
 export default async function Home() {
   const getDatas =  await getMatchesfootball()

@@ -27,7 +27,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "components/News.jsx", "components/Navbar.jsx", "components/Matches.jsx", "components/LinkSide.jsx", "components/LeagueTable.jsx", "components/Competition.jsx", "components/Sidebar.jsx", "components/Status.jsx", "app/(Leagues)/brazilian-series-a/loading.jsx", "app/(Leagues)/brazilian-series-a/page.jsx", "app/(Leagues)/bundesliga/loading.jsx", "app/(Leagues)/bundesliga/page.jsx", "app/(Leagues)/championship/loading.jsx", "app/(Leagues)/championship/page.jsx", "app/(Leagues)/copa-libertadores/loading.jsx", "app/(Leagues)/copa-libertadores/page.jsx", "app/(Leagues)/la-liga/loading.jsx", "app/(Leagues)/la-liga/page.jsx", "app/(Leagues)/ligue-1/loading.jsx", "app/(Leagues)/ligue-1/page.jsx", "app/(Leagues)/premier-league/loading.jsx", "app/(Leagues)/premier-league/page.jsx", "app/(Leagues)/primeira-liga/loading.jsx", "app/(Leagues)/primeira-liga/page.jsx", "app/(Leagues)/serie-a/loading.jsx", "app/(Leagues)/serie-a/page.jsx"  ],
   "exclude": [
     "node_modules"
   ]

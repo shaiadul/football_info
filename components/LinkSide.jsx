@@ -1,13 +1,9 @@
 import Link from 'next/link'
 import Image from 'next/image'
 
-type linkProps = {
-  href: string,
-  name: string,
-  src: string,
-}
 
-const LinkSide = ({href,name,src}:linkProps) => {
+
+const LinkSide = ({href,name,src}) => {
   return (
     <Link href={href} className='flex items-center py-2 px-2 rounded-md hover:bg-[rgb(54,63,78)]'>
       <Image src={src} alt={name} width={20} height={20} />

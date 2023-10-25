@@ -1,10 +1,9 @@
 "use client"
 
 import {useState} from 'react'
-import { matchesType } from '@/types'
 import LeagueTable from './LeagueTable'
 
-const Status = ({matchesList,matchesListFinished}:{matchesList:matchesType[], matchesListFinished:matchesType[]}) => {
+const Status = ({matchesList,matchesListFinished}) => {
 
   const [statusMatch, setStatusMatch] = useState("TODAY")
 

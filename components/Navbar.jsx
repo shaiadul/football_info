@@ -1,8 +1,8 @@
-import {FC} from 'react'
+
 import Image from 'next/image'
 import Link from 'next/link'
 
-const Navbar:FC = () => {
+const Navbar = () => {
   return (
     <div className='flex justify-between items-center pt-2 pb-5 font-mono'>
       <Link href="/" className='flex items-center space-x-2'>

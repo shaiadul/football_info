@@ -1,4 +1,3 @@
-import { FC } from "react";
 import LinkSide from "./LinkSide";
 
 const Leagues = [
@@ -58,7 +57,7 @@ const Leagues = [
   },
 ];
 
-const Sidebar: FC = async () => {
+const Sidebar = async () => {
   return (
     <section className="h-[50vh] px-2 md:px-4 py-2 bg-[rgb(40,46,58)] rounded-md hidden md-block lg:block">
       <div>

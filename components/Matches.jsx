@@ -1,7 +1,6 @@
 import Image from "next/image";
-import { matchesType } from "@/types";
 
-const Matches = ({ data }: { data: matchesType }) => {
+const Matches = ({ data }) => {
   const getDate = new Date(data?.utcDate).toLocaleTimeString("en-US", {
     hour: "2-digit",
     minute: "2-digit",
@@ -12,8 +11,8 @@ const Matches = ({ data }: { data: matchesType }) => {
       <div className="w-full flex items-center">
         <div className="w-[20px] h-[20px] relative mr-2">
           <Image
-            src={data?.homeTeam?.crest!}
-            alt={data?.homeTeam?.name!}
+            src={data?.homeTeam?.crest}
+            alt={data?.homeTeam?.name}
             fill
             className="object-cover"
           />
@@ -33,8 +32,8 @@ const Matches = ({ data }: { data: matchesType }) => {
         <p className="text-sm text-right">{data.awayTeam?.name}</p>
         <div className="w-[20px] h-[20px] relative ml-2">
           <Image
-            src={data?.awayTeam?.crest!}
-            alt={data.awayTeam?.name!}
+            src={data?.awayTeam?.crest}
+            alt={data.awayTeam?.name}
             fill
             className="object-cover"
           />

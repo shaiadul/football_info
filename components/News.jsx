@@ -1,12 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-import { getNewsInfo } from "@/api";
-import { newsType } from "@/types";
+import {getNewsInfo} from "../api"
+// import { newsType } from "@/types";
 
 const News = async () => {
   const getNews = await getNewsInfo();
-
-  const newsData: newsType[] = getNews.articles;
+  
+  const newsData = getNews.articles;
 
   return (
     <div className="w-[350px] bg-[rgb(40,46,58)] rounded-md px-2 md:px-6 py-2 hidden md-block lg:block">
